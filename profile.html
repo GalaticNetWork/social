@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySpaceNeo - Perfil de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+     <style>
+        .round-image {
+            width: 100px; /* Puedes ajustar el tamaño según sea necesario */
+            height: 100px; /* Asegúrate de que el ancho y el alto sean iguales para una imagen redonda */
+            border-radius: 50%;
+            object-fit: cover; /* Esto asegurará que la imagen se ajuste al contenedor redondo sin distorsionarse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Perfil de Usuario</h1>
+            <img src="usuario1.png" alt="Imagen Redonda" class="round-image">
+
+        <p id="welcomeMessage"></p>
+        <button id="logoutButton">Cerrar Sesión</button>
+
+        <h2>Muro de Comentarios</h2>
+        <form id="commentForm">
+            <textarea id="commentText" placeholder="Escribe un comentario..." required></textarea>
+            <button type="submit">Publicar</button>
+        </form>
+        <div id="commentWall"></div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
